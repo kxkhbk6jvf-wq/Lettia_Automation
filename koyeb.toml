@@ -1,0 +1,22 @@
+# Koyeb Configuration for Lettia Automation
+# This file configures the deployment on Koyeb platform
+
+[build]
+# Build configuration
+type = "dockerfile"
+dockerfile = "Dockerfile"
+
+[deploy]
+# Deployment configuration
+strategy = "rolling"
+healthcheck = "/health"
+
+[env]
+# Environment variables will be set in Koyeb dashboard
+# See KOYEB_ENV_VARS.md for required variables
+
+[run]
+# Run configuration
+command = ["python", "koyeb_entrypoint.py"]
+restart = "always"
+

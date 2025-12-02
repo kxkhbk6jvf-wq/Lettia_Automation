@@ -1,0 +1,85 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# PDFs gerados
+sef_pdfs/
+**/sef_pdfs/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables (não devem estar no container)
+.env
+.env.local
+.env.*.local
+
+# Credentials (não devem estar no container)
+credentials/**/*.json
+*.pem
+*.key
+
+# State files
+**/state/*.json
+database/*.json
+
+# CSV files
+Lodgify_CSV/
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+._*
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (opcional - pode incluir se quiser)
+# *.md
+# !README.md
+
+# Docker files (não precisam estar dentro da imagem)
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# Koyeb files (não precisam estar na imagem)
+koyeb.toml
+KOYEB_SETUP.md
+
+# Test files (opcional - pode incluir se quiser testes)
+tests/
+test_*.py
+
+# Temporary files
+*.tmp
+*.bak
+*.patch
+*.diff
+
